@@ -1,0 +1,60 @@
+.user-details {
+    width: 60%;
+    height: 15%;
+    margin-left: 5%;
+}
+
+.user-photo  {
+    width: 10%;
+    height: 10%;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.card {
+    border-bottom: 1px solid #D3D3D3;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    border-left: none;
+    border-right: none;
+}
+
+.user-details {
+    display: flex;
+    flex-direction: row;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    height: 20%;
+
+}
+
+.login-link, .name-text {
+    padding-left: .5rem;
+}
+
+.discription-item {
+    padding: .5rem 0 0 .5rem;
+}
+
+.inform-tem {
+    display: flex;
+    flex-direction: row;
+    padding: .5rem 0 0 .5rem;
+}
+.city-item {
+    font-size: 11px;
+    padding-left: .2rem;
+}
+
+.email-p {
+    padding-left: 1rem;
+}
+.email-item {
+    font-size: 11px;
+    padding-left: .2rem;
+}
