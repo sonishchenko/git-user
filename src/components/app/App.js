@@ -219,6 +219,10 @@ render() {
         }
     ];
 
+    users.forEach((el) => {
+       console.log(el)
+    });
+
     return (
         <UserDetails />
     )
