@@ -8,7 +8,12 @@ import './App.css';
 export default class App extends Component {
 
 
-   const users = [
+
+
+
+render() {
+
+    const users = [
         {
             "login": "blynkkk",
             "id": 11541426,
@@ -221,12 +226,9 @@ export default class App extends Component {
         }
     ];
 
-
-render() {
     return (
 
         <UserDetails />
-
 
 
     )
