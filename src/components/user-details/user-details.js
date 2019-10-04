@@ -10,8 +10,6 @@ export class UserDetails extends Component {
                 <img className='user-photo'
                      src='https://starwars-visualguide.com/assets/img/characters/3.jpg'
                      alt="character"/>
-
-
                      <div className='card-body'>
                          <div className='login-item'>
                          <a className='login-link' href='#'>Login</a>
@@ -27,12 +25,8 @@ export class UserDetails extends Component {
                              <span className='email-item'>lorem@gmail.com</span>
                          </div>
                      </div>
-
-
-            </div>
+             </div>
 
         )
-    }
-
-}
+    }}
 
