@@ -5,7 +5,11 @@ import './App.css';
 
 export default class App extends Component {
 
+
+
 render() {
+
+
     const users = [
         {
             "login": "blynkkk",
@@ -219,11 +223,22 @@ render() {
         }
     ];
 
-    users.forEach((el) => {
-       console.log(el)
-    });
+
 
     return (
-        <UserDetails />
-    )
+    users.map((el,index) => {
+        return (
+            <div>
+                <ul>
+                    <li key={index}>
+                        <div>Login: {el.login}</div>
+                        <div>ID: {el.id}</div>
+                            <div>url avatar: {el.avatar_url}</div>
+                    </li>
+                </ul>
+            </div>
+        )
+
+    }))
+
 }}
