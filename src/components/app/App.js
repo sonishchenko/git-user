@@ -25,6 +25,10 @@ render() {
             "events_url": "https://api.github.com/users/blynkkk/events{/privacy}",
             "received_events_url": "https://api.github.com/users/blynkkk/received_events",
             "type": "User",
+            "name": "Blynk IoT platform",
+            "description": "Blynk is an Internet of Things Platform aimed to simplify building mobile and web applications for the Internet of Things. Easily connect 400+ hardware models like Arduino, ESP8266, ESP32, Raspberry Pi and similar MCUs and drag-n-drop IOT mobile apps for iOS and Android in 5 minutes",
+            "location": "New York, US – Kiev, Ukraine",
+            "email": null,
             "site_admin": false,
             "score": 1.0
         },
@@ -46,6 +50,9 @@ render() {
             "events_url": "https://api.github.com/users/tshemsedinov/events{/privacy}",
             "received_events_url": "https://api.github.com/users/tshemsedinov/received_events",
             "type": "User",
+            "name": "Timur Shemsedinov",
+            "description": "Application Server for Node.js, scaling, highload, interactivity",
+            "location": "Kiev, Ukraine",
             "site_admin": false,
             "score": 1.0
         },
@@ -67,6 +74,9 @@ render() {
             "events_url": "https://api.github.com/users/akella/events{/privacy}",
             "received_events_url": "https://api.github.com/users/akella/received_events",
             "type": "User",
+            "name": "Yuri Artiukh",
+            "description": "h4ck1n'",
+            "location": "Kiev",
             "site_admin": false,
             "score": 1.0
         },
@@ -88,6 +98,9 @@ render() {
             "events_url": "https://api.github.com/users/LisaDziuba/events{/privacy}",
             "received_events_url": "https://api.github.com/users/LisaDziuba/received_events",
             "type": "User",
+            "name": "Lisa Dziuba",
+            "description": "Your favorite iOS Newsletter, now open source.",
+            "location": "Ukraine, Kiev",
             "site_admin": false,
             "score": 1.0
         },
@@ -109,6 +122,9 @@ render() {
             "events_url": "https://api.github.com/users/asvetlov/events{/privacy}",
             "received_events_url": "https://api.github.com/users/asvetlov/received_events",
             "type": "User",
+            "name": "Andrew Svetlov",
+            "description": "A fast HTTP/WebSocket to zeromq gateway",
+            "location": "Kiev",
             "site_admin": false,
             "score": 1.0
         },
@@ -130,6 +146,9 @@ render() {
             "events_url": "https://api.github.com/users/Rarst/events{/privacy}",
             "received_events_url": "https://api.github.com/users/Rarst/received_events",
             "type": "User",
+            "name": "Andrey Savchenko",
+            "description": "Official Hybrid Core WordPress theme framework repository.",
+            "location": "Kiev, Ukraine",
             "site_admin": false,
             "score": 1.0
         },
@@ -151,6 +170,9 @@ render() {
             "events_url": "https://api.github.com/users/olton/events{/privacy}",
             "received_events_url": "https://api.github.com/users/olton/received_events",
             "type": "User",
+            "name": "Sergey Pimenov",
+            "description": "Build responsive, mobile-first projects on the web with the first front-end component library in Metro Style and not only.",
+            "location": "Kiev, Ukraine",
             "site_admin": false,
             "score": 1.0
         },
@@ -172,6 +194,9 @@ render() {
             "events_url": "https://api.github.com/users/sasha240100/events{/privacy}",
             "received_events_url": "https://api.github.com/users/sasha240100/received_events",
             "type": "User",
+            "name": "Alexander Buzin",
+            "description": "JavaScript wiki. Focuses mainly on JS/HTML5/WebGL related tech.",
+            "location": "Kiev, Ukraine",
             "site_admin": false,
             "score": 1.0
         },
@@ -193,6 +218,9 @@ render() {
             "events_url": "https://api.github.com/users/pelya/events{/privacy}",
             "received_events_url": "https://api.github.com/users/pelya/received_events",
             "type": "User",
+            "name": "Sergii Pylypenko",
+            "description": "Port of SDL library and several games to the Android OS.",
+            "location": "Kiev",
             "site_admin": false,
             "score": 1.0
         },
@@ -214,12 +242,20 @@ render() {
             "events_url": "https://api.github.com/users/Metnew/events{/privacy}",
             "received_events_url": "https://api.github.com/users/Metnew/received_events",
             "type": "User",
+            "name": "Vladimir Metnew",
+            "description": 'null',
+            "location": "Ukraine, Kiev",
             "site_admin": false,
             "score": 1.0
         }
     ];
 
     return (
-        <UserDetails />
-    )
+    users.map((user) => {
+        return (
+            <div>
+                <UserDetails {...user} />
+            </div>
+        )
+    }))
 }}
