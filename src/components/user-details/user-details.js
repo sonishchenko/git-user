@@ -8,19 +8,19 @@ export class UserDetails extends Component {
         return (
             <div className='user-details col-md card'>
                 <img className='user-photo'
-                     src={this.props.avatar_url}
+                     src='#'
                      alt="character"/>
                      <div className='card-body'>
                          <div className='login-item'>
-                         <a className='login-link' href='#'>{this.props.login}</a>
-                         <span className='name-text'>{this.props.name}</span>
+                         <a className='login-link' href='#'>Text</a>
+                         <span className='name-text'>TExt</span>
                          </div>
                          <div className='discription-item'>
-                             {this.props.description}
+                             Text
                          </div>
                          <div className='inform-tem'>
                              <i className="fas fa-map-marker-alt"></i>
-                             <span className='city-item'>{this.props.location}</span>
+                             <span className='city-item'>Text</span>
                              <i className="far fa-envelope email-p"></i>
                              <span className='email-item'>lorem@gmail.com</span>
                          </div>
