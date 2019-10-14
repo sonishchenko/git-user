@@ -16,7 +16,7 @@ export default class App extends Component {
      componentDidMount() {
         fetch('https://api.github.com/search/users?q=location:kiev&sort=followers&order=desc&per_page=10&page=1')
             .then(response => response.json())
-            .then(users => this.setState(users));
+            .then(users => this.setState( {users: users.items} ))
      }
 
     render() {
@@ -24,7 +24,7 @@ export default class App extends Component {
     const { users } = this.state;
 
         return (
-               users.map( user => <UserDetails {...user}/> )
+               users.map( (user, index) => (<UserDetails key={index} {...user}/>) )
                 )
     }
 

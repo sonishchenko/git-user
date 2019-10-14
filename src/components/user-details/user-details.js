@@ -5,15 +5,16 @@ import "./user-details.css";
 export class UserDetails extends Component {
 
     render() {
+
         return (
             <div className='user-details col-md card'>
                 <img className='user-photo'
-                     src='#'
+                     src={this.props.avatar_url}
                      alt="character"/>
                      <div className='card-body'>
                          <div className='login-item'>
-                         <a className='login-link' href='#'>Text</a>
-                         <span className='name-text'>TExt</span>
+                         <a className='login-link' href='#'>{this.props.login}</a>
+                         <span className='name-text'>Text</span>
                          </div>
                          <div className='discription-item'>
                              Text
