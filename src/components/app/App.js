@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import {UserDetails} from "../user-details/user-details";
+import {TopText} from "../top-text/top-text";
 
 import './App.css';
+
 
 export default class App extends Component {
 
@@ -9,8 +11,6 @@ export default class App extends Component {
         super(props);
         this.state = {
             users: []
-
-
         };
     }
      componentDidMount() {
@@ -24,8 +24,9 @@ export default class App extends Component {
     const { users } = this.state;
 
         return (
-               users.map( (user, index) => (<UserDetails key={index} {...user}/>) )
+
+           users.map( (user, index) => (<UserDetails key={index} user={user}/>) )
+
                 )
     }
-
 }
