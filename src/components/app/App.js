@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {UserDetails} from "../user-details/user-details";
-import {TopText} from "../top-text/top-text";
+
 
 import './App.css';
 
