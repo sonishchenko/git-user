@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {UserDetails} from "../user-details/user-details";
-
+import {TopText} from "../top-text/top-text";
 
 import './App.css';
 
@@ -18,15 +18,14 @@ export default class App extends Component {
             .then(response => response.json())
             .then(users => this.setState( {users: users.items} ))
      }
-
     render() {
 
     const { users } = this.state;
-
         return (
-
-           users.map( (user, index) => (<UserDetails key={index} user={user}/>) )
-
+            <div>
+            <TopText/>
+                {users.map( (user, index) => (<UserDetails key={index} user={user}/>) ) }
+            </div>
                 )
     }
 }
