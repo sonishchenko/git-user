@@ -25,7 +25,7 @@ export default class App extends Component {
 
         return (
 
-
+           users.map( (user, index) => (<UserDetails key={index} user={user}/>) )
 
                 )
     }
