@@ -3,12 +3,12 @@ import thunkMiddleware from 'redux-thunk';
 
 const reducer = (users, action) => {
     switch (action.type) {
-    case 'FETCH_USERS_START':
-        return true;
-    case 'FETCH_USERS_SUCCESS':
-        return false ;   
-    case 'FETCH_USERS_ERROR':
-        return false ;  
+    case fetching === true:
+        return 'FETCH_USERS_START';
+    case fetching === false:
+        return 'FETCH_USERS_SUCCESS' ;   
+    case fetching === false:
+        return 'FETCH_USERS_ERROR';  
      default:
          return users   
 }
